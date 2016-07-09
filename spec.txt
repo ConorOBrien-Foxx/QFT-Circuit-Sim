@@ -1,0 +1,38 @@
+Have tiles that one can place, rotate, and click-and-drag, then simulate how the signals would pass through.
+
+Oh, should also be able to mirror them.
+
+For each gate, store this information: where the input(s) and output(s) are, and the delay between inputs and outputs. Each tile should be selectable from a bank (probably on the right side or something), and placed on a grid. Then you can click on it to rotate it, or click-and-drag to move it. You'd have to have special input and output tiles so you can set up the initial state and read output. Then you can simulate how the signals will pass through the circuitry.
+
+Okay, two AND gates: one with inputs on sides and one with inputs on side and back; two OR gates and two XOR gates with the same configurations; another XOR gate (inputs on side and back) that has two outputs (other side and front); wire crossing; A AND NOT B gate
+
+Well, I mean "back" as in "opposite from the one output".
+
+
+
+List of components
+=
+A (+) indicates found, a (-) indicates missing
+Everything is strictly directional and 11x11 unless specifed otherwise
+ + wire
+  + bidirectional straight
+  + 4-long modular bendy	// do not need to implement
+  + diagonal
+  + corner
+  + splits
+   + 2-way, both configs
+   - 3-way
+  + wire-crossing
+  - double corners (both configs)
+  + 22:11 delay
+ + AND/OR/XOR gates
+  + opposing in, one out
+  - opposing in, two out
+  + adjacent in, one/two out
+ + "A-AND-NOT-B" gates
+  + opposing in, one out
+  + adjacent in, input-A opposite to output
+  - adjacent in, input-B opposite to output
+  - two out
+ + serial adder, 3x5 units
+

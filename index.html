@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VGoL Circuitry</title>
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="circuits.js"></script>
+	<link href="style.css" rel="STYLESHEET">
+</head>
+<body>
+	<div id="parts">
+		<h2>Part Builder</h2>
+		<svg id="builder">
+		</svg>
+		<hr>
+		<h2>Options</h2>
+		cell size: <input type="number" id="cellSize" value=30>
+		<button id="update">update values</button>
+		<div id="xy"></div>
+	</div>
+	<div id="boardHolder">
+		<svg id="board" width="500" height="500">
+			
+		</svg>
+	</div>
+</body>
+</html>

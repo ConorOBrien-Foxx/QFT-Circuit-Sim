@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono|Open+Sans);
+
+html {
+	font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+	height: 90%;
+}
+
+#parts {
+	border: 1px solid;
+	width: 200px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	text-align: center;
+	height: 90%;
+	margin: auto;
+}
+
+#boardHolder {
+	padding: 15px;
+	margin-left: 260px;
+	width: auto;
+}
+
+svg {
+	font-family: "Ubuntu Mono", monospace;
+}
